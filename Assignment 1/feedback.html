@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8" />
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="feedback.css" />
+    <link rel="stylesheet" href="dark.css" /> 
+
+    <!--import fonts from google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet" />
+
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/84c39f16a1.js" crossorigin="anonymous"></script>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+
+    <!--title-->
+    <title>Alice Kwong | Feedback</title>
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="logo">
+          <p></p>
+            <div id="switch1">
+              <span>Switch to Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" id="mode-switch" onclick="dark()">
+              <span class="slider round"></span>
+            </label>
+          </div>
+            <img src="favicon.png" alt="logo" />
+            <h1>Alice Kwong Personal Portfolio</h1>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/alicekyting/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/alicekyting/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UClYvuU2QqTUmqDY9tSPjYxg"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <!--navigation bar-->
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="aboutme.html"><i class="fa-solid fa-otter"></i> About Me</a>
+        <a href="blog.html"><i class="fa-solid fa-pen"></i> Blog</a>
+        <a href="gallery.html"><i class="fa-solid fa-image"></i> Job Gallery</a>
+        <a href="feedback.html"><i class="fa-solid fa-message"></i> Feedback</a>
+        <a href="sourcelog.html"><i class="fa-solid fa-file"></i> Source Log</a>
+        <a href="sitemap.html"><i class="fa-solid fa-signs-post"></i> Site Map</a>
+        <a href="assignment.html"><i class="fa-solid fa-book"></i> Assignment</a>
+        <div class="search-container">
+            <form action="https://www.google.com/search" class="searchform" method="get" name="searchform"
+                target="_blank">
+                <input name="sitesearch" type="hidden" value="example.com" />
+                <input autocomplete="on" class="form-control search" name="q" required="required" type="text" />
+                <button class="button" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+      <!--feedback section-->
+      <div class="contact">
+        <div id="root"></div>
+        <img class="decor marke" src="https://github.com/OlgaKoplik/CodePen/blob/master/Marke.png?raw=true" alt="Marke"/>
+      <img class="decor schtamp" src="https://github.com/OlgaKoplik/CodePen/blob/master/Schtamp.png?raw=true" alt="Schtamp"/>
+      <form class="contact__form" method="post" action="mailto:u7630748@anu.edu.au">
+        <div class="name form__item">
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name" required/>
+        </div>
+        <div class="tel form__item">
+           <label for="phone">Phone Number:</label>
+           <input id="phone" type="tel" name="phone"/>
+         </div>
+         <div class="email form__item">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+          <div class="message form__item column">
+             <label for="text">Let me know if you have any question about my experience!</label>
+             <textarea id="text" required></textarea>
+           </div>
+           <button class="button contact__button">Send</button>
+      </form>
+    </div>
+
+ <!-- Footer -->
+ <footer class="footer" id="footer">
+  <div class="footer-btm">
+    <p>Copoyright &copy; Alice Kwong</p>
+    <a href="aboutmysite.html">About My Site</a>
+    <p></p>
+  </div>
+</footer>
+
+<script>
+function dark() {
+ var element = document.body;
+ element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+
+</html>

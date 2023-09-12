@@ -1,0 +1,81 @@
+/* button for switch to dark mode */
+#switch1 {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+  }
+  
+  .switch {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 17px;
+    margin-left: 10px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 17px;
+  }
+  
+  .slider.round {
+    border-radius: 17px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #33623f;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(13px);
+  }
+  
+  /* set the background and color for dark mode */
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  .dark-mode h1,
+  .dark-mode h2,
+  .dark-mode h3,
+  .dark-mode p,
+  .dark-mode span,
+  .dark-mode a {
+    color: white;
+  }
+  
+  /* adjust navbar and footer to keep orginal */
+  .dark-mode .navbar a, 
+  .dark-mode .footer *,
+  .dark-mode .flex *,
+  .dark-mode .show *
+  {
+    color: #183a1d;
+  }
+

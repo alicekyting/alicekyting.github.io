@@ -1,0 +1,49 @@
+/* remove the link underline and color decoration */
+.container1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* font size of title */
+.container1 h1 {
+    font-size: 25px;
+    padding-left: 10px;
+}
+  
+/* the area of the table */
+.out-table {
+    margin: 0 auto; /* set at the middle of the page */
+    padding: 5px;
+    max-width: 1200px;
+  }
+  
+  .table {
+    margin: 0 0 40px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px #00000033; /* shadow of the table */
+    display: table;
+  }
+  
+  /* formatting the table rows */
+  .row {
+    display: table-row;
+    background: #f6f6f6;
+  }
+
+  /* odd number of row will have different color to make a better visual */
+  .row:nth-of-type(odd) {
+    background: #e9e9e9;
+  }
+
+  /* formatting the table header */
+  .row.header {
+    font-weight: 900;
+    color: #ffffff;
+    background: #262220;
+  }
+  
+  .cell {
+    padding: 6px 12px;
+    display: table-cell;
+  }
+  

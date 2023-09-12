@@ -1,0 +1,11 @@
+/* font size and styling */
+.sitemap-wrapper {
+    font-size: large;
+    color: #183a1d;
+}
+
+/* remove the link underline and color decoration */
+.sitemap-wrapper a {
+    text-decoration: none;
+    color: inherit;
+}

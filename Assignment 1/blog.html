@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8" />
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="dark.css" /> 
+
+    <!--import fonts from google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet" />
+
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/84c39f16a1.js" crossorigin="anonymous"></script>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+
+    <!--title-->
+    <title>Alice Kwong | Blog</title>
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="logo">
+            <p></p>
+            <div id="switch1">
+              <span>Switch to Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" id="mode-switch" onclick="dark()">
+              <span class="slider round"></span>
+            </label>
+          </div>
+            <img src="favicon.png" alt="logo" />
+            <h1>Alice Kwong Personal Portfolio</h1>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/alicekyting/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/alicekyting/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UClYvuU2QqTUmqDY9tSPjYxg"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <!--navigation bar-->
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="aboutme.html"><i class="fa-solid fa-otter"></i> About Me</a>
+        <a href="blog.html"><i class="fa-solid fa-pen"></i> Blog</a>
+        <a href="gallery.html"><i class="fa-solid fa-image"></i> Job Gallery</a>
+        <a href="feedback.html"><i class="fa-solid fa-message"></i> Feedback</a>
+        <a href="sourcelog.html"><i class="fa-solid fa-file"></i> Source Log</a>
+        <a href="sitemap.html"><i class="fa-solid fa-signs-post"></i> Site Map</a>
+        <a href="assignment.html"><i class="fa-solid fa-book"></i> Assignment</a>
+        <div class="search-container">
+            <form action="https://www.google.com/search" class="searchform" method="get" name="searchform"
+                target="_blank">
+                <input name="sitesearch" type="hidden" value="example.com" />
+                <input autocomplete="on" class="form-control search" name="q" required="required" type="text" />
+                <button class="button" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Book List-->
+    <div class="book">
+        <div class="conBigTitle">
+            <h2>My Book List</h2>
+        </div>
+        <div class="show">
+            <s class="sign"></s>
+            <div class="showLeft">
+                <h3><a href="book1.html" title="Shadow and Bone" target="_blank">Shadow and Bone</a></h3>
+                <p class="author">Author : Leigh Bardugo</p>
+                <p class="introduce">
+                    Shadow and Bone is a popular young adult fantasy novel by Leigh Bardugo set in the fictional world
+                    of Ravka.
+                    The story follows Alina Starkov, an orphan and mapmaker who discovers she has the rare ability to
+                    summon light.
+                    She is taken to a magical academy to train as a Grisha, a group of people with magical abilities who
+                    serve the kingdom.
+                    However, as Alina tries to master her powers, she becomes embroiled in a dangerous political plot
+                    involving the power-hungry Darkling, who seeks to use her powers for his own gain.
+                </p>
+                <span>
+                    <a href="book1.html" target="_blank" title="Shadow and Bone">
+                        <img src="ShadowBone.jpeg" title="Shadow and Bone" alt="Shadow and Bone" class="bookCover lazy">
+                    </a>
+                </span>
+            </div>
+            <ul class="showMid">
+                <li>
+                    <a href="book2.html" target="_blank" title="Six of Crows">
+                        <img src="sixofcrows.jpeg" title="Six of Crows" alt="Six of Crows" class="lazy">
+                    </a>
+                    <p class="bookName">
+                        <a href="book2.html" title="Six of Crows" target="_blank">Six of Crows</a>
+                    </p>
+                    <p>Leigh Bardugo</p>
+                </li>
+                <li>
+                    <a href="book3.html" target="_blank" title="Atomic Habits">
+                        <img src="AtomicHabits.jpeg" title="Atomic Habits" alt="Atomic Habits" class="lazy">
+                    </a>
+                    <p class="bookName">
+                        <a href="book3.html" title="Atomic Habits" target="_blank">Atomic Habits</a>
+                    </p>
+                    <p>James Clear</p>
+                </li>
+                <li class="tb">
+                    <a href="book4.html" target="_blank" title="Icebreaker">
+                        <img src="icebreaker.jpeg" title="Icebreaker" alt="Icebreaker" class="lazy">
+                    </a>
+                    <p class="bookName">
+                        <a href="book4.html" title="Icebreaker" target="_blank">
+                            Icebreaker</a>
+                    </p>
+                    <p>Hannah Grace</p>
+                </li>
+                <li class="tb">
+                    <a href="book5.html" target="_blank" title="Foster">
+                        <img src="foster.jpeg"
+                            title="Foster" alt="Foster" class="lazy">
+                    </a>
+                    <p class="bookName">
+                        <a href="book5.html" title="Foster" target="_blank">Foster</a>
+                    </p>
+                    <p>Claire Keegan</p>
+                </li>
+            </ul>
+            <div class="showRight">
+                <h3><s class="crown"></s>Recently I watch</h3>
+                <ul>
+                    <li class="onShow">
+                        <dl class="open">
+                            <dt>1</dt>
+                            <dd>
+                                <div>
+                                    <span class="bookPic">
+                                            <img src="library.jpeg" alt="book picyure"
+                                                class="lazy" />
+                                    </span>
+                                    <div class="bookCon">
+                                        <p>
+                                            The Midnight Library<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="close">
+                            <dt>2</dt>
+                            <dd>
+                                <span class="bookName">
+                                    Twisted Games
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="close">
+                            <dt>3</dt>
+                            <dd>
+                                <span class="bookName">
+                                    The One Thing
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="close">
+                            <dt>4</dt>
+                            <dd>
+                                <span class="bookName">
+                                    Verity
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="close">
+                            <dt>5</dt>
+                            <dd>
+                                <span class="bookName">
+                                    UPROAR!
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="close">
+                            <dt>6</dt>
+                            <dd>
+                                <span class="bookName">
+                                    Outlive
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="close">
+                            <dt>7</dt>
+                            <dd>
+                                <span class="bookName">
+                                    Young Forever
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="close">
+                            <dt>8</dt>
+                            <dd>
+                                <span class="bookName">
+                                    Freezing Order
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="close">
+                            <dt>9</dt>
+                            <dd>
+                                <span class="bookName">
+                                    Chip War
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="close">
+                            <dt>10</dt>
+                            <dd>
+                                <span class="bookName">
+                                    Bea Wolf
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- lyrics using lrc format so it can create animation -->
+    <div class="MySong" id="MySong">
+    <h2>My Current Favourite Song</h2>
+</div>
+    <textarea name="lyrics" id="txt" cols="30" rows="10" style="display: none">
+        [00:02.23]No (yeah)
+        [00:04.72](La-la) da-ah
+        [00:07.73](Ah, uh, uh, uh, yeah)
+        [00:13.27]Think I only want one number in my phone
+        [00:16.29]I might change your contact to don't leave me alone
+        [00:19.52]You said you like my eyes and you like to make 'em roll
+        [00:23.29]Treat me like a queen, now you got me feelin' thrown, oh
+        [00:27.29]But I can't help myself
+        [00:29.04]When you get close to me
+        [00:30.54]Baby my tongue goes numb
+        [00:32.04]Sounds like bleh, blah, blee
+        [00:34.04]I don't want no one else (don't want)
+        [00:35.79]Baby, I'm in too deep
+        [00:37.27]Here's a lil' song I wrote (a song I wrote)
+        [00:39.04]It's about you and me (me)
+        [00:40.79]I'll be honest
+        [00:43.14]Lookin' at you got me thinkin' nonsense
+        [00:46.40]Cartwheels in my stomach when you walk in
+        [00:49.90]And when you got your arms around me
+        [00:51.64]Ooh, it feels so good I had to jump the octave
+        [00:56.89]I think I got an ex but I forgot him
+        [01:00.14]And I can't find my chill, I must have lost it
+        [01:03.89]I don't even know I'm talking nonsense
+        [01:06.64]I'm talking, I'm talking (ahh)
+        [01:08.89]I'm talking all around clock
+        [01:09.97]I'm talking hope nobody knocks
+        [01:11.70]I'm talking opposite of soft
+        [01:13.76]I'm talking wild, wild thoughts
+        [01:15.28]You gotta keep up with me
+        [01:17.01]I got some young energy
+        [01:18.51]I caught the L-O-V-E
+        [01:20.25]How do you do this to me?
+        [01:22.01]But I can't help myself
+        [01:24.02]When you get close to me
+        [01:25.50]Baby my tongue goes numb
+        [01:27.51]Sounds like blah, blah, bleh, blee
+        [01:29.26]I don't want no one else (don't want)
+        [01:31.02]Baby, I'm in too deep (too deep)
+        [01:32.52]Here's a lil' song I wrote (a song I wrote)
+        [01:34.26]It's about you and me
+        [01:36.26]I'll be honest (honest)
+        [01:38.01]Lookin' at you got me thinkin' nonsense
+        [01:41.76]Cartwheels in my stomach when you walk in (when you walk in)
+        [01:45.07]When you got your arms around me
+        [01:46.88]Ooh, it feels so good I had to hit the octave
+        [01:51.88]I think I got an ex but I forgot him
+        [01:55.13]And I can't find my chill, I must have lost it
+        [01:58.88]I don't even know I'm talking nonsense (ohh)
+        [02:01.77]I'm talking, I'm talking, I'm talking
+        [02:05.82]I'm talking, I'm talking, I'm talking (na-na-na)
+        [02:08.82]Blah, blah, blah, blah, uh-uh-uh-uh
+        [02:11.07]Ahh
+        [02:13.06]I don't even know anymore
+        [02:17.86]Ohh
+        [02:19.66]This song catchier than chicken pox is
+        [02:23.16]I bet your house is where my other sock is
+        [02:26.71]Woke up this morning thought I'd write a pop hit
+        [02:30.21]How quickly can you take your clothes off pop quiz?
+        [02:36.24]That one's not gonna make it
+        [02:41.01]Most of these aren't gonna make it
+    </textarea>
+
+    <!-- song's information -->
+    <div class="photo">
+      <div class="titleforalbum"> Nonsense</div>
+      <div class="singer"> Sabrina Carpenter</div>
+      <div class="play"></div>
+      <div class="lrc">
+        <div class="content"></div>
+      </div>
+    </div>
+
+    <!-- mp3 -->
+    <audio id="myMusic" src="nonsense.mp3">
+    </audio>
+
+    <!-- JS -->
+    <script src="mp3player.js"></script>
+
+    <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-btm">
+      <p>Copoyright &copy; Alice Kwong</p>
+      <a href="aboutmysite.html">About My Site</a>
+      <p></p>
+    </div>
+  </footer>
+
+  <script>
+function dark() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+</body>
+
+</html>

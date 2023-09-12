@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.book img {
+    border: none;
+}
+
+/* book link setting */
+.book a {
+    text-decoration: none;
+    outline: none;
+    color: #183a1d;
+}
+
+.book a:hover {
+    color: #f0a04b;
+}
+
+.book input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+em,
+span {
+    display: inline-block;
+}
+
+.book {
+    margin-left: 210px;
+    margin-right: 250px;
+    font: 12px/20px;
+}
+
+.conBigTitle {
+    width: 1000px;
+    text-align: center;
+    padding: 44px 0 30px 0;
+}
+
+.conBigTitle h2 {
+    font-size: 26px;
+    color: #183a1d;
+    height: 36px;
+}
+
+.conBigTitle p {
+    color: #183a1d;
+}
+
+.conBigTitle p a {
+    margin: 0 4px;
+    color: #183a1d;
+}
+
+.show {
+    width: 1000px;
+    height: 526px;
+    background: #fcfcf1;
+    position: relative;
+}
+
+.show .sign {
+    width: 63px;
+    height: 63px;
+    background-position: -26px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.show .showLeft {
+    width: 246px;
+    height: 481px;
+    padding: 45px 56px 0;
+    float: left;
+}
+
+.show .showLeft h3 {
+    width: 246px;
+    height: 22px;
+    font-size: 20px;
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #183a1d;
+}
+
+.show .showLeft .author {
+    margin: 10px 0 20px 0;
+}
+
+.show .showLeft .introduce {
+    width: 246px;
+    height: 64px;
+    overflow: hidden;
+    margin-bottom: 94px;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    position: relative;
+}
+
+.show .showLeft span {
+    width: 158px;
+    height: 190px;
+    float: right;
+    position: relative;
+}
+
+.show .showLeft img {
+    position: absolute;
+    z-index: 1;
+}
+
+.show .showLeft .bookCover {
+    width: 156px;
+    height: 208px;
+}
+
+.show .showLeft .shadow {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    z-index: 0
+}
+
+.show .showMid {
+    float: left;
+    width: 358px;
+    border-left: 1px solid #183a1d;
+    box-sizing: border-box;
+}
+
+.show .showMid li {
+    float: left;
+    width: 101px;
+    padding: 40px 38px 42px;
+    border-right: 1px solid #183a1d;
+}
+
+.show .showMid li img {
+    width: 102px;
+    height: 136px;
+}
+
+.show .showMid li p {
+    width: 104px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.show .showMid li p a {
+    color: #183a1d;
+}
+
+.show .showMid li p a:hover {
+    color: #f0a04b;
+}
+
+.show .showMid .tb {
+    border-top: 1px solid #183a1d;
+}
+
+.show .showRight {
+    float: left;
+    width: 253px;
+    padding: 28px 0 0 30px;
+}
+
+.show .showRight h3 {
+    width: 228px;
+    height: 30px;
+    font-size: 20px;
+    color: #183a1d;
+    position: relative;
+    padding-left: 28px;
+    font-weight: 300;
+}
+
+.show .showRight .crown {
+    width: 21px;
+    height: 18px;
+    background-position: 0px -68px;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.show .showRight li,
+.show .showRight dl {
+    overflow: hidden;
+}
+
+.show .showRight .open {
+    padding-top: 16px;
+}
+
+.show .showRight dl dt {
+    float: left;
+    text-align: right;
+    width: 10px;
+    margin-right: 18px;
+}
+
+.show .showRight dl dd {
+    float: left;
+    border-bottom: 1px solid #dfdfdf;
+    width: 200px;
+}
+
+.show .showRight .open dd .bookPic {
+    width: 63px;
+    height: 84px;
+    display: block;
+    border: 1px solid #183a1d;
+    float: left;
+    margin: 0 16px 16px 0;
+}
+
+.show .showRight li .bookPic img {
+    width: 63px;
+    height: 84px;
+}
+
+.show .showRight .open dd .bookCon {
+    float: left;
+}
+
+.show .showRight .open dd .bookCon .num {
+    font-size: 12px;
+    font-family: arial;
+}
+
+.show .showRight .open dd .bookCon p {
+    color: #183a1d;
+    width: 100px;
+    max-height: 32px;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.show .showRight .open dd .bookCon p a {
+    color: #183a1d;
+}
+
+.show .showRight .open dd .bookCon p a:hover {
+    color: #f0a04b;
+}
+
+.show .showRight dl dd s {
+    float: left;
+    width: 14px;
+    height: 9px;
+    background-position: -86px -73px;
+    margin: 6px 6px 0 0;
+}
+
+.show .showRight .close dd {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.show .showRight .close dt {
+    line-height: 35px;
+}
+
+.show .showRight .close dd .bookName {
+    width: 130px;
+    height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.show .showRight .close dd .num {
+    float: right;
+    font-size: 12px;
+    float: left;
+    margin-left: 10px
+}
+
+.show .showRight .close dd s {
+    margin-top: 12px;
+}
+
+.show .showRight li .open {
+    display: none;
+}
+
+.show .showRight .onShow .open {
+    display: block;
+}
+
+.show .showRight .onShow .close {
+    display: none;
+}
+
+.close .bookName {
+    font-size: 13px;
+}
+
+/* Heading to introduction the song */
+.MySong {
+    width: 1000px;
+    text-align: center;
+    margin-left: 210px;
+    margin-right: 250px;
+    padding: 44px 100px 0px 0;
+    color: #183a1d;
+}
+
+/* set up the music player background, container, and font */
+.photo{
+    width: 320px;
+    height: 630px;
+    background:linear-gradient(180deg,#ead6ee,#a0f1ea);
+    margin: 50px auto;
+    color: #042020;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #ead5ee;
+    overflow: hidden;
+  }
+  
+  /* song name */
+  .titleforalbum{
+    margin-top: 5px;
+    width: 100%;
+    height: 70px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 70px;
+  }
+  
+  /* singer name */
+  .singer{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  /* album cover */
+  .play{
+    width: 182px;
+    height: 193px;
+    background-image: url("album.jpeg");
+    background-repeat: no-repeat;
+    margin: 20px auto;
+  }
+  
+  .lrc{
+    width: 100%;
+    height: 220px;
+    margin: 40px auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .lrc p{
+    line-height: 20px;
+    font-size: 15px;
+  }
+  
+  .content{
+    position: relative;
+  }
+  
+  .play.rotate{
+    animation: rot 5s linear infinite;
+  }
+  
+  @keyframes rot{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }

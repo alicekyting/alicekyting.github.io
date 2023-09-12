@@ -1,0 +1,167 @@
+/* feedback form css */
+
+.contact {
+  font-family: "Libre Franklin", sans-serif;
+  color: #262220;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.contact {
+  position: relative;
+  background: url("https://github.com/OlgaKoplik/CodePen/blob/master/bg.png?raw=true")
+    no-repeat center center; /* background image of the form */
+  margin-bottom: 150px;
+  max-width: 1110px;
+  height: 780px;
+  width: 100%;
+  background-size: 100%;
+  margin: 0 auto;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+}
+.form__item {
+  position: absolute;
+}
+
+input {
+  max-width: 260px;
+  border: none;
+  font-size: 19px;
+  width: 22vw;
+}
+input:focus {
+  outline-color: #262220;
+}
+label {
+  margin-right: 6px;
+  font-size: 18px;
+}
+textarea {
+  max-width: 380px;
+  width: 30vw;
+  height: 400px;
+  font-size: 18px;
+  border: none;
+  resize: none;
+}
+textarea:focus {
+  outline-color: #262220;
+}
+.checkbox {
+  max-width: 500px;
+  margin-bottom: 20px;
+  display: none;
+}
+.checkbox__box {
+  margin-right: 10px;
+}
+.name {
+  top: 49%;
+  right: 11%;
+}
+
+.tel {
+  top: 57%;
+  right: 11%;
+}
+
+.email {
+  top: 65%;
+  right: 11%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  top: 30%;
+  left: 15%;
+  width: 300px;
+}
+.contact__button {
+  position: absolute;
+  top: 75%;
+  right: 17%;
+}
+.contact__button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  background-color: #262220;
+}
+
+.button:hover {
+  background-color: #e6e0df;
+}
+
+.decor {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .contact {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 55px 1px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    max-height: 700px;
+    margin: 0 auto;
+    transform: translateY(40px);
+  }
+  .contact__form {
+    margin-top: 160px;
+    width: 60%;
+    margin-bottom: 60px;
+  }
+  .form__item {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  label {
+    margin-bottom: 10px;
+  }
+  input {
+    border: 1px solid #011d6a;
+    margin-bottom: 15px;
+    max-width: 100%;
+    width: 350px;
+    height: 30px;
+  }
+  textarea {
+    border: 1px solid #262220;
+    width: 350px;
+    max-width: 100%;
+    height: 140px;
+    margin-bottom: 25px;
+  }
+  .contact__button {
+    position: static;
+    margin-bottom: 20px;
+    max-width: 360px;
+    width: 100%;
+  }
+  .decor {
+    display: block;
+    position: absolute;
+  }
+  .marke {
+    top: 3%;
+    right: 3%;
+  }
+  .schtamp {
+    top: 4%;
+    left: 3%;
+  }
+}

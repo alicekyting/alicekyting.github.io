@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8" />
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="aboutme.css" />
+
+    <!--import fonts from google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet" />
+
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/84c39f16a1.js" crossorigin="anonymous"></script>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+
+    <!--title-->
+    <title>Alice Kwong | About Me</title>
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="logo">
+            <img src="favicon.png" alt="logo" />
+            <h1>Alice Kwong Personal Portfolio</h1>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/alicekyting/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/alicekyting/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UClYvuU2QqTUmqDY9tSPjYxg"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <!--navigation bar-->
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="aboutme.html"><i class="fa-solid fa-otter"></i> About Me</a>
+        <a href="blog.html"><i class="fa-solid fa-pen"></i> Blog</a>
+        <a href="gallery.html"><i class="fa-solid fa-image"></i> Job Gallery</a>
+        <a href="feedback.html"><i class="fa-solid fa-message"></i> Feedback</a>
+        <a href="sourcelog.html"><i class="fa-solid fa-file"></i> Source Log</a>
+        <a href="sitemap.html"><i class="fa-solid fa-signs-post"></i> Site Map</a>
+        <a href="assignment.html"><i class="fa-solid fa-book"></i> Assignment</a>
+        <div class="search-container">
+            <form action="https://www.google.com/search" class="searchform" method="get" name="searchform"
+                target="_blank">
+                <input name="sitesearch" type="hidden" value="example.com" />
+                <input autocomplete="on" class="form-control search" name="q" required="required" type="text" />
+                <button class="button" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Me-->
+    <figure class="flex">
+        <div></div>
+        <div>
+            <h3>ABOUT ME</h3>
+            <p>I am studying master of computing in ANU. I was born in Hong Kong and completed my degree in a college
+                big like ANU. I enjoy dancing jazz funk and hip hop. After I came to Canberra, gym training become my
+                favourite workout. Fun Fact: Otters are my favourite animals. I still dreaming one day I can have my own
+                otter!!</p>
+        </div>
+    </figure>
+
+    <!-- My Passion -->
+    <figure class="flex">
+        <div></div>
+        <div>
+            <h3>MY PASSION</h3>
+            <p>Although I was a business student in college, I always want to try programming and computing. After I
+                gradurated from university, I worked in a company for one and a half years. Then I decided to come to
+                Australia to study computing. I really enjoy all the things related to computer and technology. More
+                than that, I also passion for movies and books so this website will also let you all know what movies
+                and books I love.</p>
+        </div>
+    </figure>
+
+    <!-- Image Map -->
+    <div id="image-map-container" class="image-map-container">
+        <h3> Below is the places where I like in Hong Kong </h3>
+        <p> // Click to check the images // </p>
+    <img class="imageofimagemap" src="hongkongmap.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area alt="Ocean Park" title="Ocean Park" href="map-oceanpark.html#image-map-container" coords="436,669,103" shape="circle" id="area">
+        <area alt="Dim Sum" title="Dim Sum" href="map-dimsum.html#image-map-container" coords="682,626,69" shape="circle">
+        <area alt="Ferry" title="Ferry" href="map-ferry.html#image-map-container" coords="762,309,107" shape="circle">
+        <area alt="Tsim Sha Tsui" title="Tsim Sha Tsui" href="map-tsimshatsui.html#image-map-container" coords="529,238,121" shape="circle">
+        <area alt="Central" title="Central" href="map-central.html#image-map-container" coords="169,558,161" shape="circle">
+        <area alt="Kowloon" title="Kowloon" href="map-kowloon.html#image-map-container" coords="666,84,78" shape="circle">
+    </map>
+    
+
+    <!-- Dim Sum Images -->
+    <div id="op-container" class="op-container">
+    <img class="op" src="dimsum.jpeg" alt="dimsum image" />
+</div>  
+    
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-btm">
+            <p>Copoyright &copy; Alice Kwong</p>
+            <a href="aboutmysite.html">About My Site</a>
+        </div>
+    </footer>
+</body>
+
+</html>

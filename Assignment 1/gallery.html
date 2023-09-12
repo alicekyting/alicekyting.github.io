@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8" />
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="dark.css" /> 
+
+    <!--import fonts from google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet" />
+
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/84c39f16a1.js" crossorigin="anonymous"></script>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+
+    <!--title-->
+    <title>Alice Kwong | Job Gallery</title>
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="logo">
+            <p></p>
+            <div id="switch1">
+              <span>Switch to Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" id="mode-switch" onclick="dark()">
+              <span class="slider round"></span>
+            </label>
+          </div>
+            <img src="favicon.png" alt="logo" />
+            <h1>Alice Kwong Personal Portfolio</h1>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/alicekyting/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/alicekyting/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UClYvuU2QqTUmqDY9tSPjYxg"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <!--navigation bar-->
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="aboutme.html"><i class="fa-solid fa-otter"></i> About Me</a>
+        <a href="blog.html"><i class="fa-solid fa-pen"></i> Blog</a>
+        <a href="gallery.html"><i class="fa-solid fa-image"></i> Job Gallery</a>
+        <a href="feedback.html"><i class="fa-solid fa-message"></i> Feedback</a>
+        <a href="sourcelog.html"><i class="fa-solid fa-file"></i> Source Log</a>
+        <a href="sitemap.html"><i class="fa-solid fa-signs-post"></i> Site Map</a>
+        <a href="assignment.html"><i class="fa-solid fa-book"></i> Assignment</a>
+        <div class="search-container">
+            <form action="https://www.google.com/search" class="searchform" method="get" name="searchform"
+                target="_blank">
+                <input name="sitesearch" type="hidden" value="example.com" />
+                <input autocomplete="on" class="form-control search" name="q" required="required" type="text" />
+                <button class="button" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <!-- 1st column of gallery -->
+        <div class="column">
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery1.png" alt="Seeding gift to Movie Artist">
+                <p class="imgtext">Seeding gift to Movie Artist</p>
+            </div>
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery5.png" alt="Partnership with Singer">
+                <p class="imgtext">Partnership with Singer</p>
+            </div>
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery3.png" alt="Haribo Event Helper">
+                <p class="imgtext">Haribo Event Helper</p>
+            </div>
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery12.png" alt="Youtubers Fans Meeting Organiser">
+                <p class="imgtext">Youtubers Fans Meeting Organiser</p>
+            </div>
+        </div>
+
+        <!-- Column 2 of images-->
+        <div class="column">
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery6.png" alt="Sample checking">
+                <p class="imgtext">Sample checking</p>
+            </div>
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery2.png" alt="Partnership with Artist">
+                <p class="imgtext">Partnership with Artist</p>
+            </div>
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery8.png" alt="University event with youtuber">
+                <p class="imgtext">University event with youtuber</p>
+            </div>
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery4.png" alt="Magazine shooting">
+                <p class="imgtext">Magazine shooting</p>
+            </div>
+        </div>
+
+        <!-- Column 3 of images-->
+        <div class="column">
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery10.png" alt="Showroom products tryon">
+                <p class="imgtext">Showroom products tryon</p>
+            </div>
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery9.png" alt="Regional Digital Campaign with Tyson Yoshi">
+                <p class="imgtext">Regional Digital Campaign with Tyson Yoshi</p>
+            </div>
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery7.png" alt="Meeting with Vogue">
+                <p class="imgtext">Meeting with Vogue</p>
+            </div>
+            <div class="image-box" onclick="showImage(this)">
+                <img src="images/gallery11.png" alt="Video Shooting Backstage">
+                <p class="imgtext">Video Shooting Backstage</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="modal" id="gallery-modal">
+        <!-- Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Image -->
+        <img src="images/gallery1.png" alt="Selected Image" class="modal-content" id="modal-img">
+
+        <!-- Caption -->
+        <p id="captionText" class="caption-text"></p>
+    </div>
+
+
+<!-- Footer -->
+<footer class="footer" id="footer">
+    <div class="footer-btm">
+      <p>Copoyright &copy; Alice Kwong</p>
+      <a href="aboutmysite.html">About My Site</a>
+      <p></p>
+    </div>
+  </footer>
+  
+  <!-- JS -->
+  <script>
+  function dark() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+  }
+  </script>
+
+    <script src="gallery.js"></script>
+
+</body>
+
+</html>

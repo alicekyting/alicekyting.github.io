@@ -1,0 +1,78 @@
+/* set the border of the text box */
+.flex {
+    margin: 0;
+    display: flex;
+    border: 3px solid #183a1d;
+    background-color: #e1eedd;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  /* images in the box */
+  .flex div:first-child {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .flex:first-of-type div:first-child {
+    background-image: url("me1.jpg");
+  }
+
+  .flex:last-of-type div:first-child {
+    background-image: url("me2.png");
+  }
+  .flex div:last-child {
+    margin: 2rem;
+    flex: 2;
+  }
+
+  /* font style setting */
+  .flex h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 400;
+  }
+  .flex p {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+  }
+  .flex p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+
+  /* set the image to the right and decor the border to make it like a frame :) */
+  .op-container {
+    display: inline-block;
+    vertical-align: top;
+  }  
+
+  .op-container img {
+    float: right;
+    width: auto;
+    height: 610px;
+    border: 20px outset #749379;
+    border-radius: 5px;
+  }
+  
+  /* flexible the size to adopt different sizes of media */
+  @media (min-width: 768px) {
+    .op-container {
+      width: 40%;
+    }
+    .imageofimagemap {
+      width: 58%;
+    }
+  }
+
+  .imageofimagemap {
+    margin-left: 10px;
+  }
+
+  .image-map-container h3,p{
+    text-align: center;
+  }

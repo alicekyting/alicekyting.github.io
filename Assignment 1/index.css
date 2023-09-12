@@ -1,0 +1,111 @@
+/* make hero image and text aligned at the center */
+.hero-text {
+    text-align: center;
+}
+
+/* make avatar image rounded */
+.avatar {
+    width: 15%;
+    margin-top: 40px;
+    border-radius: 50%;
+}
+
+/* make a preview icons for the coming elements */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 500px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.icons_items {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    margin-top: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 200px;
+    height: 220px;
+}
+
+/* make the icon images rounded */
+.icons_items_img {
+    border-radius: 10%;
+    width: 170px;
+    height: 110px;
+    margin-bottom: 30px;
+}
+
+/* make the text aligned at the center */
+.icons span {
+    display: block;
+    text-align: center;
+}
+
+/* remove the underline of the text link */
+.icons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* work related introduction */
+.introduce {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduce_item {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.introduce_item_img {
+    width: 450px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+.introduce_item_title {
+    color: #183a1d;
+    width: 450px;
+    font-size: 18px;
+    line-height: 36px;
+    align-self: center;
+    padding-left: 100px;
+}
+
+.introduce_item_titles {
+    width: 400px;
+    font-size: 18px;
+    line-height: 36px;
+    align-self: center;
+    padding-right: 100px;
+}
+
+
+/* button link to social media feed */
+.social-button {
+    background-color: #6ad86f; /* Yellow color */
+    color: #FFFFFF; /* White text color */
+    padding: 10px 20px;
+    border-radius: 25px; /* Increased border radius for a rounder button */
+    border: none; /* Remove the border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .social-button:hover {
+    background-color: #4c9a50; /* Darker yellow on hover */
+  }
+  
+  #social-media-feed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--meta-->
+  <meta charset="UTF-8" />
+
+  <!--CSS link-->
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="dark.css" /> 
+
+  <!--import fonts from google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+
+  <!--fontawesome-->
+  <script src="https://kit.fontawesome.com/84c39f16a1.js" crossorigin="anonymous"></script>
+
+  <!--favicon-->
+  <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+
+  <!--title-->
+  <title>Alice Kwong Personal Portfolio</title>
+</head>
+
+<body>
+  <!--header-->
+  <header class="header">
+    <div class="logo">
+      <p></p>
+      <div id="switch1">
+        <span>Switch to Dark Mode</span>
+      <label class="switch">
+        <input type="checkbox" id="mode-switch" onclick="dark()">
+        <span class="slider round"></span>
+      </label>
+    </div>
+      <img src="favicon.png" alt="logo" />
+      <h1>Alice Kwong Personal Portfolio</h1>
+    </div>
+    <div class="social" id="social">
+      <a href="https://www.instagram.com/alicekyting/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/alicekyting/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/channel/UClYvuU2QqTUmqDY9tSPjYxg"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </header>
+
+  <!--navigation bar-->
+  <div class="navbar">
+    <a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="aboutme.html"><i class="fa-solid fa-otter"></i> About Me</a>
+    <a href="blog.html"><i class="fa-solid fa-pen"></i> Blog</a>
+    <a href="gallery.html"><i class="fa-solid fa-image"></i> Job Gallery</a>
+    <a href="feedback.html"><i class="fa-solid fa-message"></i> Feedback</a>
+    <a href="sourcelog.html"><i class="fa-solid fa-file"></i> Source Log</a>
+    <a href="sitemap.html"><i class="fa-solid fa-signs-post"></i> Site Map</a>
+    <a href="assignment.html"><i class="fa-solid fa-book"></i> Assignment</a>
+    <div class="search-container">
+      <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+        <input name="sitesearch" type="hidden" value="example.com" />
+        <input autocomplete="on" class="form-control search" name="q" required="required" type="text" />
+        <button class="button" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!--hero image and text-->
+  <div class="hero-image">
+    <div class="hero-text">
+      <img class="avatar" src="avatar.jpg" alt="avatar" />
+      <h1>Hello. I am Alice. 👩🏻‍💻</h1>
+      <p>A computer student at ANU.</p>
+    </div>
+  </div>
+
+  <div class="social-media-feed" id="social-media-feed">
+    <a href="sharing.html">
+    <button class="social-button">Sharing</button>
+  </a>
+  </div>
+
+  <!--icons to preview the coming contents-->
+  <div class="icons">
+    <div class="icons_items">
+      <img class="icons_items_img" src="education.jpeg" alt="">
+      <span><a href="#edu">Education</a></span>
+    </div>
+    <div class="icons_items">
+      <img class="icons_items_img" src="experience.jpeg" alt="">
+      <span><a href="#work">Experience</a></span>
+    </div>
+    <div class="icons_items">
+      <img class="icons_items_img" src="skills.jpeg" alt="">
+      <span><a href="#skills">Skills</a></span>
+    </div>
+    <div class="icons_items">
+      <img class="icons_items_img" src="language.jpeg" alt="">
+      <span><a href="#lang">Language</a></span>
+    </div>
+  </div>
+
+  <!--contents (work related introduction)-->
+  <div class="introduce">
+    <div class="introduce_item" id="edu">
+      <img class="introduce_item_img" src="myeducation.png" alt="myedu">
+      <span class="introduce_item_title">
+        📍 2018 - 2022 <br>
+        🏫 The Chinese University of Hong Kong <br>
+        📚 Bachelor of Business Administration <br>
+        🪄 Major in Marketing <br>
+        📽️ Minor in Communications <br>
+        ❤️ Video editing is my favourite course! ❤️ <br>
+        My school have a unique collegiate system (just like Hogwarts School in Harry Potter movie) and the sorting hat
+        assigned me into United College where I met most of my uni frds! <br>
+        <br>
+        📍 2023 - now <br>
+        🏫 The Australian National University <br>
+        📚 Master of Computing <br>
+        Try my best to learn programming in order to enhance my profession🔍 <br>
+      </span>
+
+    </div>
+    <div class="introduce_item">
+      <span class="introduce_item_titles" id="work">
+        📍 2019-2022 <br>
+        👩🏻‍💻 Digital Marketing and PR Executive <br>
+        🫶🏻 LVMH Fashion Group Asia Pacific <br>
+        🛍️ KENZO Paris <br>
+        ✨ My first office internship & full time work <br>
+        <br>
+        Feel so blessed that I am able to join this family where I learned how to communicate with different parties and
+        got many chances to work with different artists and actors🥹❤️ <br>
+      </span>
+      <img class="introduce_item_img" src="mywork.png" alt="">
+    </div>
+    <div class="introduce_item">
+      <img class="introduce_item_img" src="myskills.png" alt="">
+      <span class="introduce_item_title" id="skills">
+        <strong>Adobe Sets</strong><br>
+        📷 Photoshop 💡Lightroom <br>
+        <br>
+        <strong>Data Analysis</strong> <br>
+        📊 R Studio 🗃️ Tableau 🗂️ SQL <br>
+        <br>
+        <strong>Programming</strong> <br>
+        🖌️ Java <br>
+      </span>
+    </div>
+    <div class="introduce_item">
+      <span class="introduce_item_titles" id="lang">
+        Cantonese: 🟢🟢🟢🟢🟢 <br>
+        Mandarin:  🟢🟢🟢🟢⚫️ <br>
+        English:   🟢🟢🟢🟢⚫️ <br>
+        Korean:    🟢🟢⚫️⚫️⚫️ <br>
+      </span>
+      <img class="introduce_item_img" src="mylanguage.png" alt="">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-btm">
+      <p>Copoyright &copy; Alice Kwong</p>
+      <a href="aboutmysite.html">About My Site</a>
+      <p></p>
+    </div>
+  </footer>
+
+  <script>
+function dark() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+</body>
+
+</html>
